@@ -1,9 +1,8 @@
 package MooseX::Constructor::AllErrors::Error::Required;
-BEGIN {
-  $MooseX::Constructor::AllErrors::Error::Required::AUTHORITY = 'cpan:HDP';
-}
 # ABSTRACT: represents a missing argument error
-$MooseX::Constructor::AllErrors::Error::Required::VERSION = '0.024';
+
+our $VERSION = '0.025';
+
 use Moose;
 extends 'MooseX::Constructor::AllErrors::Error';
 use namespace::autoclean;
@@ -28,15 +27,13 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Hans Dieter Pearcey
-
 =head1 NAME
 
 MooseX::Constructor::AllErrors::Error::Required - represents a missing argument error
 
 =head1 VERSION
 
-version 0.024
+version 0.025
 
 =head1 DESCRIPTION
 

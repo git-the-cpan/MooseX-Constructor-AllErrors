@@ -1,10 +1,7 @@
-package MooseX::Constructor::AllErrors;
-BEGIN {
-  $MooseX::Constructor::AllErrors::AUTHORITY = 'cpan:HDP';
-}
-# git description: v0.023-7-g1944d11
-$MooseX::Constructor::AllErrors::VERSION = '0.024';
+package MooseX::Constructor::AllErrors; # git description: v0.024-11-g96a028d
 # ABSTRACT: Capture all constructor errors
+
+our $VERSION = '0.025';
 
 use Moose ();
 use Moose::Exporter;
@@ -27,15 +24,13 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Hans Dieter Pearcey Jesse Luehrs Karen Etheridge Shawn Sorichetti
-
 =head1 NAME
 
 MooseX::Constructor::AllErrors - Capture all constructor errors
 
 =head1 VERSION
 
-version 0.024
+version 0.025
 
 =head1 SYNOPSIS
 
@@ -67,16 +62,15 @@ L<Moose>
 
 Hans Dieter Pearcey <hdp@cpan.org>
 
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2009 by Hans Dieter Pearcey.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
-
 =head1 CONTRIBUTORS
 
+=for stopwords Karen Etheridge Hans Dieter Pearcey Jesse Luehrs Shawn Sorichetti
+
 =over 4
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
 
 =item *
 
@@ -88,12 +82,15 @@ Jesse Luehrs <doy@tozt.net>
 
 =item *
 
-Karen Etheridge <ether@cpan.org>
-
-=item *
-
 Shawn Sorichetti <ssoriche@gmail.com>
 
 =back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2009 by Hans Dieter Pearcey.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

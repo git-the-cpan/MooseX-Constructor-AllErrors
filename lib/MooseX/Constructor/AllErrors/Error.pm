@@ -1,10 +1,9 @@
 # vim: ts=4 sts=4 sw=4
 package MooseX::Constructor::AllErrors::Error;
-BEGIN {
-  $MooseX::Constructor::AllErrors::Error::AUTHORITY = 'cpan:HDP';
-}
 # ABSTRACT: base class for individual constructor errors
-$MooseX::Constructor::AllErrors::Error::VERSION = '0.024';
+
+our $VERSION = '0.025';
+
 use Moose;
 use namespace::autoclean;
 
@@ -16,15 +15,13 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Hans Dieter Pearcey
-
 =head1 NAME
 
 MooseX::Constructor::AllErrors::Error - base class for individual constructor errors
 
 =head1 VERSION
 
-version 0.024
+version 0.025
 
 =head1 DESCRIPTION
 

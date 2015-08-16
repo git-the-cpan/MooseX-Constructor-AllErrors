@@ -1,11 +1,10 @@
 package MooseX::Constructor::AllErrors::Error::Constructor;
-BEGIN {
-  $MooseX::Constructor::AllErrors::Error::Constructor::AUTHORITY = 'cpan:HDP';
-}
 # ABSTRACT: error class for MooseX::Constructor::AllErrors
-$MooseX::Constructor::AllErrors::Error::Constructor::VERSION = '0.024';
+
+our $VERSION = '0.025';
+
 use Moose;
-use namespace::clean;   # FIXME: namespace::autoclean does not respect overloads
+use namespace::autoclean 0.16;  # overload handling
 
 has errors => (
     isa => 'ArrayRef[MooseX::Constructor::AllErrors::Error]',
@@ -87,15 +86,13 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Hans Dieter Pearcey
-
 =head1 NAME
 
 MooseX::Constructor::AllErrors::Error::Constructor - error class for MooseX::Constructor::AllErrors
 
 =head1 VERSION
 
-version 0.024
+version 0.025
 
 =head1 DESCRIPTION
 

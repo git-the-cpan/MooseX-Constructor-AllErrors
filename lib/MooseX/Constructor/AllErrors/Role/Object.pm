@@ -1,9 +1,8 @@
 package MooseX::Constructor::AllErrors::Role::Object;
-BEGIN {
-  $MooseX::Constructor::AllErrors::Role::Object::AUTHORITY = 'cpan:HDP';
-}
 # ABSTRACT: object role for verifying constructor arguments
-$MooseX::Constructor::AllErrors::Role::Object::VERSION = '0.024';
+
+our $VERSION = '0.025';
+
 use Moose::Role;
 use Try::Tiny;
 use namespace::autoclean;
@@ -83,15 +82,13 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Hans Dieter Pearcey
-
 =head1 NAME
 
 MooseX::Constructor::AllErrors::Role::Object - object role for verifying constructor arguments
 
 =head1 VERSION
 
-version 0.024
+version 0.025
 
 =head1 AUTHOR
 
